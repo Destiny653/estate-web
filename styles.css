@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid green; */
+}
+
+body {
+    /* width: 1000px; */
+    box-sizing: border-box;
+}
+
+.container {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 17% 83% 1fr;
+}
+
+.contentTab {
+    box-sizing: border-box;
+    padding-left: 25px;
+    padding-right: 20px;
+}
+
+.firstHead {
+    display: flex;
+    justify-content: space-between;
+}
+
+.firstHead .left {
+    padding: 20px 0;
+}
+
+.firstHead .right {
+    padding: 20px 0;
+    position: relative;
+}
+
+.firstHead .right img {
+    width: 30px;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 10px;
+    padding: 2px 4px 0 4px;
+    position: relative;
+    top: 6px;
+}
+
+.firstHead .right {
+    position: relative;
+}
+
+.secondHead {
+    width: 210px;
+    padding: 12px 3px;
+    background-color: rgba(173, 216, 230, 0.116);
+    font-size: 15px;
+    font-family: Poppins;
+    border-radius: 6px;
+}
+
+.secondHead a {
+    padding: 4px;
+    margin-right: 10px;
+    border-radius: 3px;
+    color: #000;
+}
+
+.secondHead a:hover {
+    background-color: #fff;
+}
+
+.thirdHead {
+    display: flex;
+}
+
+.thirdHead .left {
+    display: flex;
+}
+
+.thirdHead div section {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.menu {
+    background-color: rgba(173, 216, 230, 0.116);
+    box-sizing: border-box;
+    padding-left: 15px;
+    position: relative;
+    min-height: 100vh;
+}
+
+.menu .control2 {
+    margin-top: 10px;
+}
+
+.menu .control2 h5,
+input::placeholder {
+    padding: 15px 0;
+    font-size: 14px;
+    font-family: Poppins;
+    border-radius: 6px;
+}
+
+.menu input {
+    padding: 10px;
+    padding-left: 27px;
+    width: 75%;
+    background-color: transparent;
+    border-radius: 6px;
+    outline: 1px;
+    border: 1px solid gray;
+}
+
+.menu .control2 h5:first-child {
+    position: relative;
+    padding: 0;
+    right: 7px;
+}
+
+.menu .control2 h5:first-child .fa-thin {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+}
+
+.menu .fa-sharp,
+.menu .fa {
+    padding-right: 5px;
+}
+
+.fa-angle-down {
+    font-size: 17px;
+}
+
+.fa-search {
+    position: absolute;
+    top: 12px;
+    left: 8px;
+}
+
+.menu .control2 h5:hover {
+    background-color: rgba(84, 202, 248, 0.089);
+}
+
+.control {
+    position: absolute;
+    bottom: 10px;
+    width: 93%;
+}
+
+.control h5 {
+    padding: 15px 0;
+    font-size: 15px;
+    font-family: Poppins;
+    border-radius: 6px;
+}
+
+.control h5:hover {
+    background-color: rgba(84, 202, 248, 0.205);
+}
+
+.contentTab span {
+    font-size: 13px;
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+span.searchH1 {
+    font-weight: 300;
+}
+
+.thirdHead .left h4 {
+    font-size: 13px;
+    font-family: Poppins;
+    line-height: 35px;
+    color: grey;
+}
+
+.thirdHead .left div {
+    margin-right: 22.5px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(121, 153, 165, 0.301);
+}
+
+.thirdHead .right {
+    padding-top: 30px;
+}
+
+.thirdHead .right a {
+    font-size: 13px;
+    font-family: Poppins;
+    margin-right: 10px;
+    padding: 10px 3px;
+    border-radius: 5px;
+    color: #000;
+}
+
+.thirdHead .right span {
+    font-size: 13px;
+    font-family: Poppins;
+    color: grey;
+    font-weight: 300;
+    padding: 10px 3px;
+    border-radius: 5px;
+}
+
+.rightChild:hover {
+    background-color: rgba(173, 216, 230, 0.116);
+}
+
+.container h1 {
+    font-size: 27px;
+    font-family: Poppins;
+    line-height: 70px;
+    font-weight: 500;
+}
+
+/* Imported */
+
+
+.listProperty {
+    position: relative;
+    display: grid;
+    grid-template-columns: 37.5% 62.5%;
+    width: 100%;
+    border-bottom: 1px solid skyblue;
+    margin-bottom: 20px;
+}
+ 
+
+.listProperty h1 {
+    line-height: 25px;
+}
+
+.mainTab {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.imgImport {
+    padding-bottom: 20px;
+    width: 180px;
+    height: 170px;
+    overflow: hidden;
+}
+.imgImport img{
+    width: 180px;
+    height: 170px;
+    border-radius: 6px;
+}
+
+.imgImport::after {
+    content: '$250.000';
+    position: absolute;
+    background-color: #fff;
+    width: 100px;
+    padding-left: 8px;
+    height: 25px;
+    left: 3px;
+    top: 10px;
+    border-radius: 4px;
+    font-family: Poppins;
+    line-height: 25px;
+    z-index: 1;
+}
+
+.listProperty h1 {
+    font-size: 20px;
+}
+
+.listProperty h4 {
+    font-size: 14px;
+    font-family: Poppins;
+    padding-top: 10px;
+}
+
+.listProperty p {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 15px;
+}
+
+.listProperty p span {
+    margin: 0 13px;
+}
+
+.ProperRight {
+    box-sizing: border-box;
+    padding: 0 15px 0 0;
+}
+
+.frame {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 1px;
+}
+
+iframe {
+    width: 99%;
+    height: 100%;
+    position: relative;
+    left: 15px;
+    border-radius: 15px;
+}
+
+.themeColor {
+    width: 40px;
+    height: 18px;
+
+}
+.themeColor {
+    width: 45px;
+    height: 21px;
+    background-color: #000;
+    position: relative;
+    border-radius: 10px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.themeAfter {
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    position: absolute;
+    top: 3.2px;
+    left: 5px;
+    border-radius: 50%;
+    transition: all .4s linear;
+    cursor: pointer;
+}
+/* .themeAfter.active {
+    transform: translateX(23px);
+} */
